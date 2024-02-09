@@ -5,14 +5,14 @@
 import collections
 from ortools.sat.python import cp_model
 
-old_jobs_data = [  # task = (machine_id, processing_time).
+jobs_data_simple = [  # task = (machine_id, processing_time).
     [(0, 3), (1, 2), (2, 2)],  # Job0
     [(0, 2), (2, 1), (1, 4)],  # Job1
     [(1, 4), (2, 3)],  # Job2
 ]
 
 # Muth & Thompson 6x6 benchmark
-jobs_data = [
+jobs_data_6x6 = [
     [(3,1), (1,3), (2,6), (4,7), (6,3), (5,6)],
     [(2,8), (3,5), (5,10), (6,10), (1,10), (4,4)],
     [(3,5), (4,4), (6,8), (1,9), (2,1), (5,7)],
@@ -20,6 +20,11 @@ jobs_data = [
     [(3,9), (2,3), (5,5), (6,4), (1,3), (4,1)],
     [(2,3), (4,3), (6,9), (1,10), (5,4), (3,1)]
 ]
+
+
+jobs_data = jobs_data_6x6
+
+###################################################################################
 
 
 machines_count = 1 + max(task[0] for job in jobs_data for task in job)
