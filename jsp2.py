@@ -43,4 +43,15 @@ for job_id, job in enumerate(jobs_data):
         )
         machine_to_intervals[machine].append(interval_var)
 
+# Create and add disjunctive constraints.
+for machine in all_machines:
+    model.AddNoOverlap(machine_to_intervals[machine])
+
+# Precedences inside a job.
+for job_id, job in enumerate(jobs_data):
+    for task_id in range(len(job) - 1):
+        model.Add(
+            all_tasks[job_id, task_id + 1].start >= all_tasks[job_id, task_id].end
+        )
+
 print("done")
