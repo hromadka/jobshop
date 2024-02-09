@@ -62,5 +62,56 @@ model.AddMaxEquality(
 )
 model.Minimize(obj_var)
 
+# Call the solver.
+solver = cp_model.CpSolver()
+status = solver.Solve(model)
+
+# Display results.
+if status == cp_model.OPTIMAL or status == cp_model.FEASIBLE:
+    print("Solution:")
+    # Create one list of assigned tasks per machine.
+    assigned_jobs = collections.defaultdict(list)
+    for job_id, job in enumerate(jobs_data):
+        for task_id, task in enumerate(job):
+            machine = task[0]
+            assigned_jobs[machine].append(
+                assigned_task_type(
+                    start=solver.Value(all_tasks[job_id, task_id].start),
+                    job=job_id,
+                    index=task_id,
+                    duration=task[1],
+                )
+            )
+
+    # Create per machine output lines.
+    output = ""
+    for machine in all_machines:
+        # Sort by starting time.
+        assigned_jobs[machine].sort()
+        sol_line_tasks = "Machine " + str(machine) + ": "
+        sol_line = "           "
+
+        for assigned_task in assigned_jobs[machine]:
+            name = f"job_{assigned_task.job}_task_{assigned_task.index}"
+            # Add spaces to output to align columns.
+            sol_line_tasks += f"{name:15}"
+
+            start = assigned_task.start
+            duration = assigned_task.duration
+            sol_tmp = f"[{start},{start + duration}]"
+            # Add spaces to output to align columns.
+            sol_line += f"{sol_tmp:15}"
+
+        sol_line += "\n"
+        sol_line_tasks += "\n"
+        output += sol_line_tasks
+        output += sol_line
+
+    # Finally print the solution found.
+    print(f"Optimal Schedule Length: {solver.ObjectiveValue()}")
+    print(output)
+else:
+    print("No solution found.")
+
 
 print("done")
