@@ -54,4 +54,13 @@ for job_id, job in enumerate(jobs_data):
             all_tasks[job_id, task_id + 1].start >= all_tasks[job_id, task_id].end
         )
 
+# Makespan objective.
+obj_var = model.NewIntVar(0, horizon, "makespan")
+model.AddMaxEquality(
+    obj_var,
+    [all_tasks[job_id, len(job) - 1].end for job_id, job in enumerate(jobs_data)],
+)
+model.Minimize(obj_var)
+
+
 print("done")
