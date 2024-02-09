@@ -5,11 +5,22 @@
 import collections
 from ortools.sat.python import cp_model
 
-jobs_data = [  # task = (machine_id, processing_time).
+old_jobs_data = [  # task = (machine_id, processing_time).
     [(0, 3), (1, 2), (2, 2)],  # Job0
     [(0, 2), (2, 1), (1, 4)],  # Job1
     [(1, 4), (2, 3)],  # Job2
 ]
+
+# Muth & Thompson 6x6 benchmark
+jobs_data = [
+    [(3,1), (1,3), (2,6), (4,7), (6,3), (5,6)],
+    [(2,8), (3,5), (5,10), (6,10), (1,10), (4,4)],
+    [(3,5), (4,4), (6,8), (1,9), (2,1), (5,7)],
+    [(2,5), (1,5), (3,5), (4,3), (5,8), (6,9)],
+    [(3,9), (2,3), (5,5), (6,4), (1,3), (4,1)],
+    [(2,3), (4,3), (6,9), (1,10), (5,4), (3,1)]
+]
+
 
 machines_count = 1 + max(task[0] for job in jobs_data for task in job)
 all_machines = range(machines_count)
@@ -112,6 +123,12 @@ if status == cp_model.OPTIMAL or status == cp_model.FEASIBLE:
     print(output)
 else:
     print("No solution found.")
+
+# Statistics.
+print("\nStatistics")
+print(f"  - conflicts: {solver.NumConflicts()}")
+print(f"  - branches : {solver.NumBranches()}")
+print(f"  - wall time: {solver.WallTime()}s")
 
 
 print("done")
