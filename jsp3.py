@@ -9,11 +9,18 @@ from ortools.sat.python import cp_model
 def main():
     """Minimal jobshop problem."""
     # Data.
+#    jobs_data = [  # task = (machine_id, processing_time).
+#        [(0, 3), (1, 2), (2, 2)],  # Job0
+#        [(0, 2), (2, 1), (1, 4)],  # Job1
+#        [(1, 4), (2, 3)],  # Job2
+#    ]
+
     jobs_data = [  # task = (machine_id, processing_time).
-        [(0, 3), (1, 2), (2, 2)],  # Job0
-        [(0, 2), (2, 1), (1, 4)],  # Job1
-        [(1, 4), (2, 3)],  # Job2
+        [(0, 10), (1, 8), (2, 4)],  # Job0
+        [(1, 8), (0,3), (3, 5), (2, 6)],  # Job1
+        [(0, 4), (1,7), (3, 3)],  # Job2
     ]
+
 
     machines_count = 1 + max(task[0] for job in jobs_data for task in job)
     all_machines = range(machines_count)

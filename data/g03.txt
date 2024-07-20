@@ -1,0 +1,18 @@
+3x3 from https://developers.google.com/optimization/scheduling/job_shop
+
+job 0 = [(0, 3), (1, 2), (2, 2)]
+job 1 = [(0, 2), (2, 1), (1, 4)]
+job 2 = [(1, 4), (2, 3)]
+
+
+ Optimal Schedule Length: 11
+Machine 0: job_0_0   job_1_0
+           [0,3]     [3,5]
+Machine 1: job_2_0   job_0_1   job_1_2
+           [0,4]     [4,6]     [7,11]
+Machine 2: job_1_1   job_0_2   job_2_1
+           [5,6]     [6,8]     [8,11]
+
+Eagle-eyed readers examining machine 1 might wonder why job_1_2 was scheduled at time 7 instead of time 6. 
+Both are valid solutions, but remember: the objective is to minimize the makespan. 
+Moving job_1_2 earlier wouldn't reduce the makespan , so the two solutions are equal from the solver's perspective.
