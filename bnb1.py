@@ -74,6 +74,7 @@ def branch_and_bound(matrix):
 
     queue = [root]
 
+
     while queue:
         current_node = queue.pop(0)
 
