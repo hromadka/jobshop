@@ -15,11 +15,20 @@ def main():
 #        [(1, 4), (2, 3)],  # Job2
 #    ]
 
+    # makespan = 28
     jobs_data = [  # task = (machine_id, processing_time).
         [(0, 10), (1, 8), (2, 4)],  # Job0
         [(1, 8), (0,3), (3, 5), (2, 6)],  # Job1
         [(0, 4), (1,7), (3, 3)],  # Job2
     ]
+
+    # Cliff Stein example, also makespan = 28
+    # throws errors (branch conflict?)
+#    jobs_data = [ #task = (machine_id, processing_time).
+#        [(1,10), (2,8), (3,4)],
+#        [(2,8), (1,3), (4,5), (3,6)],
+#        [(1,4), (2,7), (4,3)],
+#    ]
 
 
     machines_count = 1 + max(task[0] for job in jobs_data for task in job)
