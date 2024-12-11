@@ -8,7 +8,7 @@ from ortools.sat.python import cp_model
 
 def main():
     """Minimal jobshop problem."""
-    # Data.
+    # Data.  https://developers.google.com/optimization/scheduling/job_shop
 #    jobs_data = [  # task = (machine_id, processing_time).
 #        [(0, 3), (1, 2), (2, 2)],  # Job0
 #        [(0, 2), (2, 1), (1, 4)],  # Job1
@@ -22,7 +22,8 @@ def main():
         [(0, 4), (1,7), (3, 3)],  # Job2
     ]
 
-    # Cliff Stein example, also makespan = 28
+    # Cliff Stein example from Pinedo, also makespan = 28
+    # THIS IS THE SAME PROBLEM AS ABOVE, BUT WITH JOB INDEX FROM 1 INSTEAD OF 0
     # throws errors (branch conflict?)
 #    jobs_data = [ #task = (machine_id, processing_time).
 #        [(1,10), (2,8), (3,4)],
