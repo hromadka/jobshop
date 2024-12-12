@@ -81,7 +81,7 @@ print(arr)
 
 
 service = QiskitRuntimeService()
-backend = service.least_busy(operational=True, simulator=False)
+backend = service.least_busy(operational=True, simulator=True)  # SIMULATOR
 
 n = math.ceil(math.log(rows*cols, 2)) # 4
 
