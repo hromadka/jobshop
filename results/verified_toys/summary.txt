@@ -1,0 +1,10 @@
+Host: NVIDIA DGX Spark (hostname omitted)
+Fresh corrected-readout rerun; seed=42, delta=0.1
+Completed: 6/6
+Instance n C* S Alg2_calls Alg2_rounds Alg2_seconds BBHT_successes BBHT_mean_calls
+th02 3 4 4 2 4 0.112117 100/100 0.53
+k032 4 3 5 3 5 0.140165 100/100 0.56
+g03 10 11 117 198179 12808 520.831655 100/100 1.22
+v03 11 6 544 409459 18108 1007.631013 100/100 0.67
+yn03 11 12 468 408511 18111 954.504906 100/100 0.64
+p034 13 28 628 4885966 108618 11386.236407 100/100 1.58

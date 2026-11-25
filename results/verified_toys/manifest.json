@@ -1,0 +1,31 @@
+{
+  "host": "NVIDIA DGX Spark (hostname omitted)",
+  "platform": "Linux-7.0.0-1019-nvidia-aarch64-with-glibc2.39",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "runner_sha256": "dc50f5be3a13647d2ffea6fcaad717ad86a2dd23099914d638f187dad4f69bd8",
+  "source_sha256": {
+    "jssp_utils.py": "1aafa1131ecde98e31078e72b26ce6a0f304f50edc82c1162335021c4f8b6971",
+    "qiskit_oracle.py": "a80a5f78575efded3beeab84d5f472fbfd9896f1271cc2a53462c54795745c31",
+    "qiskit_bbht.py": "d1c1df7921d29c3ed8a9f04dccf6ebff1760be0de1431d6abd80fbdbc3e1ddcb"
+  },
+  "benchmark_sha256": {
+    "th02": "7ebd9a2e29f894900316f383bd5cbea68d4e22ce99dd18523d2916046dc49493",
+    "k032": "e4eb8b2b6138a6c0273a3cb7c2649e6b00aa85aceb28ccf9b591f57c21cbbc03",
+    "g03": "05abd76d63684003928d4718d4be197443f96d50b5e0f66ba1772630a1400ef2",
+    "v03": "4da96a440ee1878665b0f0e02b738d8c0b71807183abdfbc1516195309f72476",
+    "yn03": "39d19a8e9be0c60821b6fd09e01626b3bb5d7102dec4d01c1360ecc8382f2dd9",
+    "p034": "0141ea9b6d5cf733ccba1db0e61b0bd11dc4741fae0d2eec9aea04cf84625723"
+  },
+  "versions": {
+    "qiskit": "2.6.2",
+    "aer": "0.18.4"
+  },
+  "seed": 42,
+  "delta": 0.1,
+  "lambda_": 1.2,
+  "trials": 100,
+  "audit_shots": 8192,
+  "classical_only": false,
+  "corrected_reversal_sites": 2,
+  "corrected_solver_sha256": "5763ab93d55dfea4d13e1864ac4524375947d651631efa540270a6e3d14d4210"
+}

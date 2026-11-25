@@ -1,0 +1,7 @@
+# Tested locally with Python 3.10, Qiskit 2.6.2 and Aer 0.17.2.
+# Published Spark run used Python 3.12.3, Qiskit 2.6.2 and Aer 0.18.4.
+numpy>=2.0,<3
+qiskit>=2.6.2,<3
+qiskit-aer>=0.17.2,<0.19
+matplotlib>=3.7,<4
+pylatexenc>=2.10,<3

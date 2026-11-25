@@ -1,0 +1,13 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.tex text eol=lf
+*.pdf binary
+*.png binary
+*.xlsx binary
+
+# Preserve whitespace in benchmark tables for recorded input fingerprints.
+benchmarks-toys/*.txt whitespace=-blank-at-eol

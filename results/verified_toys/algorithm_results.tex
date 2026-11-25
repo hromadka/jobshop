@@ -1,0 +1,25 @@
+\begin{table}[!ht]
+\centering\small
+\begin{tabular}{lrr}
+\toprule
+Instance & Alg.~2 oracle calls & BBHT successes (100 trials) \\
+\midrule
+th02 & 2 & 100/100 \\
+k032 & 3 & 100/100 \\
+g03  & 198{,}179 & 100/100 \\
+v03  & 409{,}459 & 100/100 \\
+yn03 & 408{,}511 & 100/100 \\
+p034 & 4{,}885{,}966 & 100/100 \\
+\bottomrule
+\end{tabular}
+\caption{Algorithm~2 total oracle calls across all binary-search
+iterations and BBHT Algorithm~1 successes over 100 independently seeded
+trials at $T=C^*_{\max}$ ($\delta=0.10$, $\lambda=6/5$),
+using the corrected measurement-to-index mapping.
+All 100 trials succeeded for every instance.
+Every returned schedule passed independent classical checks of
+job precedence, machine non-overlap, and the makespan threshold.
+Totals include unsuccessful bounded feasibility searches at suboptimal
+thresholds (see Section~\ref{sec:resources}).}
+\label{tab:alg-results}
+\end{table}

@@ -1,0 +1,940 @@
+{
+  "name": "yn03",
+  "reference": {
+    "J": 3,
+    "M": 3,
+    "K": 9,
+    "N_valid": 1680,
+    "n": 11,
+    "C_star": 12,
+    "S": 468,
+    "all_sequences_valid": true,
+    "jns_bijection": true,
+    "histogram": {
+      "12": 468,
+      "13": 66,
+      "14": 92,
+      "15": 352,
+      "16": 211,
+      "17": 136,
+      "18": 140,
+      "19": 65,
+      "20": 53,
+      "21": 58,
+      "22": 18,
+      "23": 15,
+      "24": 6
+    }
+  },
+  "complete": true,
+  "circuit_audit": {
+    "oracle_all_indices_pass": true,
+    "diffuser_pass": true,
+    "exact_one_iteration_mass": 0.9943023920059165,
+    "theory": 0.9943023920059204,
+    "sampled_mass": 0.994140625,
+    "shots": 8192,
+    "sample_pass": true
+  },
+  "algorithm2_progress": [
+    {
+      "T": 17,
+      "x": 478,
+      "calls": 2,
+      "rounds": 3,
+      "reason": "success"
+    },
+    {
+      "T": 13,
+      "x": 1439,
+      "calls": 0,
+      "rounds": 1,
+      "reason": "success"
+    },
+    {
+      "T": 11,
+      "x": null,
+      "calls": 408508,
+      "rounds": 18102,
+      "reason": "budget_exhausted"
+    },
+    {
+      "T": 12,
+      "x": 1336,
+      "calls": 1,
+      "rounds": 5,
+      "reason": "success"
+    }
+  ],
+  "algorithm2": {
+    "C_star": 12,
+    "calls": 408511,
+    "rounds": 18111,
+    "elapsed_s": 954.504905639682,
+    "independent_verification": true,
+    "threshold_trace": [
+      {
+        "T": 17,
+        "x": 478,
+        "calls": 2,
+        "rounds": 3,
+        "reason": "success"
+      },
+      {
+        "T": 13,
+        "x": 1439,
+        "calls": 0,
+        "rounds": 1,
+        "reason": "success"
+      },
+      {
+        "T": 11,
+        "x": null,
+        "calls": 408508,
+        "rounds": 18102,
+        "reason": "budget_exhausted"
+      },
+      {
+        "T": 12,
+        "x": 1336,
+        "calls": 1,
+        "rounds": 5,
+        "reason": "success"
+      }
+    ],
+    "schedule_info": {
+      "C_max": 12,
+      "x": 1336,
+      "sequencing": [
+        2,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        2,
+        2
+      ],
+      "schedule": {
+        "6": 0,
+        "3": 0,
+        "0": 2,
+        "1": 5,
+        "4": 2,
+        "2": 8,
+        "5": 8,
+        "7": 5,
+        "8": 11
+      }
+    }
+  },
+  "bbht_trials": [
+    {
+      "trial": 1,
+      "seed": 42,
+      "x": 654,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 2,
+      "seed": 43,
+      "x": 659,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 3,
+      "seed": 44,
+      "x": 1189,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 4,
+      "seed": 45,
+      "x": 693,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 5,
+      "seed": 46,
+      "x": 273,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 6,
+      "seed": 47,
+      "x": 1215,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 7,
+      "seed": 48,
+      "x": 1405,
+      "success": true,
+      "calls": 1,
+      "rounds": 5
+    },
+    {
+      "trial": 8,
+      "seed": 49,
+      "x": 1351,
+      "success": true,
+      "calls": 1,
+      "rounds": 4
+    },
+    {
+      "trial": 9,
+      "seed": 50,
+      "x": 492,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 10,
+      "seed": 51,
+      "x": 672,
+      "success": true,
+      "calls": 0,
+      "rounds": 2
+    },
+    {
+      "trial": 11,
+      "seed": 52,
+      "x": 1336,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 12,
+      "seed": 53,
+      "x": 377,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 13,
+      "seed": 54,
+      "x": 1336,
+      "success": true,
+      "calls": 1,
+      "rounds": 5
+    },
+    {
+      "trial": 14,
+      "seed": 55,
+      "x": 1439,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 15,
+      "seed": 56,
+      "x": 283,
+      "success": true,
+      "calls": 0,
+      "rounds": 2
+    },
+    {
+      "trial": 16,
+      "seed": 57,
+      "x": 731,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 17,
+      "seed": 58,
+      "x": 686,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 18,
+      "seed": 59,
+      "x": 1151,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 19,
+      "seed": 60,
+      "x": 1362,
+      "success": true,
+      "calls": 0,
+      "rounds": 4
+    },
+    {
+      "trial": 20,
+      "seed": 61,
+      "x": 652,
+      "success": true,
+      "calls": 0,
+      "rounds": 2
+    },
+    {
+      "trial": 21,
+      "seed": 62,
+      "x": 959,
+      "success": true,
+      "calls": 1,
+      "rounds": 3
+    },
+    {
+      "trial": 22,
+      "seed": 63,
+      "x": 728,
+      "success": true,
+      "calls": 1,
+      "rounds": 3
+    },
+    {
+      "trial": 23,
+      "seed": 64,
+      "x": 712,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 24,
+      "seed": 65,
+      "x": 375,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 25,
+      "seed": 66,
+      "x": 748,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 26,
+      "seed": 67,
+      "x": 1362,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 27,
+      "seed": 68,
+      "x": 1191,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 28,
+      "seed": 69,
+      "x": 451,
+      "success": true,
+      "calls": 1,
+      "rounds": 3
+    },
+    {
+      "trial": 29,
+      "seed": 70,
+      "x": 943,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 30,
+      "seed": 71,
+      "x": 730,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 31,
+      "seed": 72,
+      "x": 239,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 32,
+      "seed": 73,
+      "x": 461,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 33,
+      "seed": 74,
+      "x": 473,
+      "success": true,
+      "calls": 1,
+      "rounds": 3
+    },
+    {
+      "trial": 34,
+      "seed": 75,
+      "x": 1339,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 35,
+      "seed": 76,
+      "x": 292,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 36,
+      "seed": 77,
+      "x": 733,
+      "success": true,
+      "calls": 1,
+      "rounds": 3
+    },
+    {
+      "trial": 37,
+      "seed": 78,
+      "x": 1243,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 38,
+      "seed": 79,
+      "x": 1404,
+      "success": true,
+      "calls": 1,
+      "rounds": 3
+    },
+    {
+      "trial": 39,
+      "seed": 80,
+      "x": 286,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 40,
+      "seed": 81,
+      "x": 1254,
+      "success": true,
+      "calls": 0,
+      "rounds": 3
+    },
+    {
+      "trial": 41,
+      "seed": 82,
+      "x": 484,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 42,
+      "seed": 83,
+      "x": 251,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 43,
+      "seed": 84,
+      "x": 1010,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 44,
+      "seed": 85,
+      "x": 925,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 45,
+      "seed": 86,
+      "x": 960,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 46,
+      "seed": 87,
+      "x": 1346,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 47,
+      "seed": 88,
+      "x": 426,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 48,
+      "seed": 89,
+      "x": 1424,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 49,
+      "seed": 90,
+      "x": 258,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 50,
+      "seed": 91,
+      "x": 958,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 51,
+      "seed": 92,
+      "x": 961,
+      "success": true,
+      "calls": 1,
+      "rounds": 3
+    },
+    {
+      "trial": 52,
+      "seed": 93,
+      "x": 1361,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 53,
+      "seed": 94,
+      "x": 1023,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 54,
+      "seed": 95,
+      "x": 291,
+      "success": true,
+      "calls": 0,
+      "rounds": 2
+    },
+    {
+      "trial": 55,
+      "seed": 96,
+      "x": 714,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 56,
+      "seed": 97,
+      "x": 1187,
+      "success": true,
+      "calls": 0,
+      "rounds": 2
+    },
+    {
+      "trial": 57,
+      "seed": 98,
+      "x": 820,
+      "success": true,
+      "calls": 1,
+      "rounds": 3
+    },
+    {
+      "trial": 58,
+      "seed": 99,
+      "x": 819,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 59,
+      "seed": 100,
+      "x": 713,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 60,
+      "seed": 101,
+      "x": 1380,
+      "success": true,
+      "calls": 0,
+      "rounds": 2
+    },
+    {
+      "trial": 61,
+      "seed": 102,
+      "x": 1214,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 62,
+      "seed": 103,
+      "x": 1211,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 63,
+      "seed": 104,
+      "x": 376,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 64,
+      "seed": 105,
+      "x": 1387,
+      "success": true,
+      "calls": 1,
+      "rounds": 3
+    },
+    {
+      "trial": 65,
+      "seed": 106,
+      "x": 1421,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 66,
+      "seed": 107,
+      "x": 421,
+      "success": true,
+      "calls": 1,
+      "rounds": 3
+    },
+    {
+      "trial": 67,
+      "seed": 108,
+      "x": 250,
+      "success": true,
+      "calls": 1,
+      "rounds": 3
+    },
+    {
+      "trial": 68,
+      "seed": 109,
+      "x": 1006,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 69,
+      "seed": 110,
+      "x": 1339,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 70,
+      "seed": 111,
+      "x": 426,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 71,
+      "seed": 112,
+      "x": 290,
+      "success": true,
+      "calls": 0,
+      "rounds": 2
+    },
+    {
+      "trial": 72,
+      "seed": 113,
+      "x": 1370,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 73,
+      "seed": 114,
+      "x": 235,
+      "success": true,
+      "calls": 0,
+      "rounds": 2
+    },
+    {
+      "trial": 74,
+      "seed": 115,
+      "x": 1215,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 75,
+      "seed": 116,
+      "x": 283,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 76,
+      "seed": 117,
+      "x": 440,
+      "success": true,
+      "calls": 1,
+      "rounds": 3
+    },
+    {
+      "trial": 77,
+      "seed": 118,
+      "x": 716,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 78,
+      "seed": 119,
+      "x": 1028,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 79,
+      "seed": 120,
+      "x": 383,
+      "success": true,
+      "calls": 1,
+      "rounds": 3
+    },
+    {
+      "trial": 80,
+      "seed": 121,
+      "x": 1396,
+      "success": true,
+      "calls": 1,
+      "rounds": 3
+    },
+    {
+      "trial": 81,
+      "seed": 122,
+      "x": 1023,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 82,
+      "seed": 123,
+      "x": 447,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 83,
+      "seed": 124,
+      "x": 377,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 84,
+      "seed": 125,
+      "x": 323,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 85,
+      "seed": 126,
+      "x": 234,
+      "success": true,
+      "calls": 4,
+      "rounds": 6
+    },
+    {
+      "trial": 86,
+      "seed": 127,
+      "x": 1365,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 87,
+      "seed": 128,
+      "x": 296,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 88,
+      "seed": 129,
+      "x": 1220,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 89,
+      "seed": 130,
+      "x": 1003,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 90,
+      "seed": 131,
+      "x": 423,
+      "success": true,
+      "calls": 1,
+      "rounds": 3
+    },
+    {
+      "trial": 91,
+      "seed": 132,
+      "x": 717,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 92,
+      "seed": 133,
+      "x": 690,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 93,
+      "seed": 134,
+      "x": 1440,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 94,
+      "seed": 135,
+      "x": 941,
+      "success": true,
+      "calls": 1,
+      "rounds": 3
+    },
+    {
+      "trial": 95,
+      "seed": 136,
+      "x": 935,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 96,
+      "seed": 137,
+      "x": 420,
+      "success": true,
+      "calls": 0,
+      "rounds": 2
+    },
+    {
+      "trial": 97,
+      "seed": 138,
+      "x": 1141,
+      "success": true,
+      "calls": 0,
+      "rounds": 1
+    },
+    {
+      "trial": 98,
+      "seed": 139,
+      "x": 1352,
+      "success": true,
+      "calls": 1,
+      "rounds": 4
+    },
+    {
+      "trial": 99,
+      "seed": 140,
+      "x": 1217,
+      "success": true,
+      "calls": 1,
+      "rounds": 2
+    },
+    {
+      "trial": 100,
+      "seed": 141,
+      "x": 738,
+      "success": true,
+      "calls": 1,
+      "rounds": 3
+    }
+  ],
+  "bbht": {
+    "successes": 100,
+    "trials": 100,
+    "mean_calls_successful": 0.64,
+    "all_returned_schedules_verified": true
+  }
+}

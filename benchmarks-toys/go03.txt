@@ -1,0 +1,12 @@
+#+++++++++++++++++++++++++++++
+# instance go03
+#+++++++++++++++++++++++++++++
+# Google OR-Tools toy 3x3 instance
+# Source: https://developers.google.com/optimization/scheduling/job_shop
+# job 0 = [(0, 3), (1, 2), (2, 2)]
+# job 1 = [(0, 2), (2, 1), (1, 4)]
+# job 2 = [(1, 4), (2, 3)]
+3 3
+0 3 1 2 2 2
+0 2 2 1 1 4
+1 4 2 3

@@ -1,0 +1,32 @@
+# Python environments and generated caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+build/
+dist/
+# Local secrets and editor state
+.env
+.env.*
+!.env.example
+.ssh/
+*.pem
+*.key
+.vscode/
+.idea/
+# Experiment outputs (the curated results/ directory is versioned)
+section9_figures/
+toy_verified_rerun/
+*_results/
+*_verified_results/
+*_feasible_512/
+*_screen_*/
+*.log
+figures/
+# External incumbent datasets: retain locally; attribution in docs/
+*_best_known.json
+# Existing unrelated nested checkout (not a configured submodule)
+learning-2.0/documentation/

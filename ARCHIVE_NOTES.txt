@@ -1,0 +1,9 @@
+Toy-only public source snapshot
+
+Contains the corrected toy solver, two experiment runners, tests, documentation,
+MIT license, six toy inputs, actual corrected reference results, and figure tools.
+Use run_all_toys_verified.py or its run_section9.py alias to run experiments.
+See README.md for quick tests, full reruns and figure generation.
+
+Excludes Git history, environments, caches, historical exploratory material,
+generated figures and large-benchmark neighborhood experiments/utilities.
